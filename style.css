@@ -1,0 +1,108 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Noto Sans TC, sans-serif;
+  color: #020202;
+}
+
+.container {
+  width: 1296px;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.card-box-list {
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card-box {
+  width: 416px;
+  border: 1px solid #f2f2f2;
+  border-radius: 16px;
+  margin-bottom: 24px; 
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; 
+}
+
+.card-header {
+  overflow: hidden;
+}
+
+.card-header img {
+  width: 100%;
+  display: block;
+  transition: all ease-out 500ms;
+}
+
+.card-header:hover img {
+  transform: scale(1.2);
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.body-title {
+  flex-grow: 1;
+  margin-top: 20px;
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
+.body-title h3 {
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 24px;
+  margin-bottom: 12px;
+}
+
+.body-title p {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #525252;
+  margin-bottom: 20px;
+}
+
+.desc-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 24px;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 20px 32px;
+  border-top: 1px solid #f2f2f2;
+}
+
+.desc-item a {
+  text-decoration: none;
+  color: #000;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* icon 填滿style */
+.material-symbols-outlined {
+  font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+}
